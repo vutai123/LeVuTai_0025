@@ -3,28 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using websitebanhang.Context;
 
 namespace websitebanhang.Controllers
 {
     public class HomeController : Controller
     {
+        WebSiteBhEntities ojbModel = new WebSiteBhEntities();
         public ActionResult Index()
         {
-            return View();
+            var lstProduct = ojbModel.Products.ToList();
+            return View(lstProduct);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }

@@ -1,7 +1,11 @@
-﻿@{
+﻿@model List<websitebanhang.Context.Product>
+@{
     ViewBag.Title = "Home Page";
 }
-
+@foreach(var item in Model)
+            {
+                <p>@item.Name</p>
+            }
 
 
 <div class="hero-slide owl-carousel site-blocks-cover">
