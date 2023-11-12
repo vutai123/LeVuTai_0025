@@ -135,6 +135,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+<<<<<<< HEAD
     <Compile Include="Areas\Admin\Controllers\BrandController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
@@ -142,6 +143,9 @@
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
     <Compile Include="Common.cs" />
+=======
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
     <Compile Include="Context\Brand.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
@@ -165,9 +169,12 @@
     </Compile>
     <Compile Include="Context\Order.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
+<<<<<<< HEAD
     </Compile>
     <Compile Include="Context\OrderDetail.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
+=======
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
     </Compile>
     <Compile Include="Context\Product.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
@@ -183,12 +190,16 @@
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\PaymentController.cs" />
+=======
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Models\BrandMasterData.cs" />
     <Compile Include="Models\CartModel.cs" />
     <Compile Include="Models\CategoryMasterData.cs" />
@@ -197,6 +208,10 @@
     <Compile Include="Models\PartialMetadataType.cs" />
     <Compile Include="Models\ProductMasterData.cs" />
     <Compile Include="Models\UserMasterData.cs" />
+=======
+    <Compile Include="Models\CartModel.cs" />
+    <Compile Include="Models\HomeModel.cs" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2143,11 +2158,18 @@
     <Content Include="Content\images\person_2.jpg" />
     <Content Include="Content\images\person_3.jpg" />
     <Content Include="Content\images\person_4.jpg" />
+<<<<<<< HEAD
     <Content Include="Content\PagedList.css" />
     <Content Include="Context\dbModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>dbModel.edmx</DependentUpon>
       <LastGenOutput>dbModel.Context.cs</LastGenOutput>
+=======
+    <Content Include="Context\dbModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>dbModel.Context.cs</LastGenOutput>
+      <DependentUpon>dbModel.edmx</DependentUpon>
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
     </Content>
     <Content Include="Context\dbModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -2343,7 +2365,10 @@
     <Content Include="Views\Category\ProductCategory.cshtml" />
     <Content Include="Views\Product\Detail.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Payment\Index.cshtml" />
+=======
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

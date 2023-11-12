@@ -16,8 +16,13 @@
           <Property Name="ShowOnHomePage" Type="bit" />
           <Property Name="DisplayOrder" Type="int" />
           <Property Name="CreatedOnUtc" Type="datetime" />
+<<<<<<< HEAD
           <Property Name="UpdateOnUtc" Type="datetime" />
           <Property Name="DeteleId" Type="bit" />
+=======
+          <Property Name="UpdatedOnUtc" Type="datetime" />
+          <Property Name="Deleted" Type="bit" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
         </EntityType>
         <EntityType Name="Categories">
           <Key>
@@ -25,6 +30,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="100" />
+<<<<<<< HEAD
           <Property Name="Avatar" Type="nvarchar" MaxLength="100" />
           <Property Name="Slug" Type="nvarchar" MaxLength="100" />
           <Property Name="ShowOnHomePage" Type="bit" />
@@ -42,13 +48,28 @@
           <Property Name="ProductId" Type="int" Nullable="false" />
           <Property Name="Quantity" Type="int" Nullable="false" />
         </EntityType>
+=======
+          <Property Name="Avartar" Type="nvarchar" MaxLength="100" />
+          <Property Name="Slug" Type="varchar" MaxLength="100" />
+          <Property Name="ShowOnHomePage" Type="bit" />
+          <Property Name="DisplayOrder" Type="int" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="CreatedOnUtc" Type="datetime" />
+          <Property Name="UpdatedOnUtc" Type="datetime" />
+        </EntityType>
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
         <EntityType Name="Orders">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="100" />
+<<<<<<< HEAD
           <Property Name="UserId" Type="int" />
+=======
+          <Property Name="ProductId" Type="int" />
+          <Property Name="Price" Type="float" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
           <Property Name="Status" Type="int" />
           <Property Name="CreatedOnUtc" Type="datetime" />
         </EntityType>
@@ -57,6 +78,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+<<<<<<< HEAD
           <Property Name="Name" Type="nvarchar" MaxLength="100" />
           <Property Name="Avatar" Type="nchar" MaxLength="100" />
           <Property Name="CategoryId" Type="int" />
@@ -68,6 +90,19 @@
           <Property Name="Slug" Type="varchar" MaxLength="50" />
           <Property Name="BrandId" Type="int" />
           <Property Name="DeleteId" Type="bit" />
+=======
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Avartar" Type="nchar" MaxLength="100" />
+          <Property Name="CategoryId" Type="int" />
+          <Property Name="ShortDes" Type="nvarchar" MaxLength="100" />
+          <Property Name="FullDescription" Type="nvarchar" MaxLength="500" />
+          <Property Name="Price" Type="float" />
+          <Property Name="PriceDiscount" Type="float" />
+          <Property Name="Typeld" Type="int" />
+          <Property Name="Sulg" Type="varchar" MaxLength="50" />
+          <Property Name="BrandId" Type="int" />
+          <Property Name="Deleted" Type="bit" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
           <Property Name="ShowOnHomePage" Type="bit" />
           <Property Name="DisplayOrder" Type="int" />
           <Property Name="CreatedOnUtc" Type="datetime" />
@@ -87,7 +122,10 @@
         <EntityContainer Name="WebSiteBhModelStoreContainer">
           <EntitySet Name="Brands" EntityType="Self.Brands" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+<<<<<<< HEAD
           <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" Schema="dbo" store:Type="Tables" />
+=======
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
           <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
@@ -108,8 +146,13 @@
           <Property Name="ShowOnHomePage" Type="Boolean" />
           <Property Name="DisplayOrder" Type="Int32" />
           <Property Name="CreatedOnUtc" Type="DateTime" Precision="3" />
+<<<<<<< HEAD
           <Property Name="UpdateOnUtc" Type="DateTime" Precision="3" />
           <Property Name="DeteleId" Type="Boolean" />
+=======
+          <Property Name="UpdatedOnUtc" Type="DateTime" Precision="3" />
+          <Property Name="Deleted" Type="Boolean" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
         </EntityType>
         <EntityType Name="Category">
           <Key>
@@ -117,6 +160,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+<<<<<<< HEAD
           <Property Name="Avatar" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Slug" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="ShowOnHomePage" Type="Boolean" />
@@ -162,6 +206,45 @@
           <Property Name="DeleteId" Type="Boolean" />
           <Property Name="ShowOnHomePage" Type="Boolean" />
           <Property Name="DisplayOrder" Type="Int32" />
+=======
+          <Property Name="Avartar" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Slug" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ShowOnHomePage" Type="Boolean" />
+          <Property Name="DisplayOrder" Type="Int32" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="CreatedOnUtc" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedOnUtc" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ProductId" Type="Int32" />
+          <Property Name="Price" Type="Double" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="CreatedOnUtc" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Avartar" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="CategoryId" Type="Int32" />
+          <Property Name="ShortDes" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FullDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Double" />
+          <Property Name="PriceDiscount" Type="Double" />
+          <Property Name="Typeld" Type="Int32" />
+          <Property Name="Sulg" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BrandId" Type="Int32" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="ShowOnHomePage" Type="Boolean" />
+          <Property Name="DisplayOrder" Type="Int32" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
           <Property Name="CreatedOnUtc" Type="DateTime" Precision="3" />
           <Property Name="UpdatedOnUtc" Type="DateTime" Precision="3" />
         </EntityType>
@@ -179,7 +262,10 @@
         <EntityContainer Name="WebSiteBhEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Brands" EntityType="Self.Brand" />
           <EntitySet Name="Categories" EntityType="Self.Category" />
+<<<<<<< HEAD
           <EntitySet Name="OrderDetails" EntityType="Self.OrderDetail" />
+=======
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
           <EntitySet Name="Orders" EntityType="Self.Order" />
           <EntitySet Name="Products" EntityType="Self.Product" />
           <EntitySet Name="Users" EntityType="Self.User" />
@@ -200,8 +286,13 @@
                 <ScalarProperty Name="ShowOnHomePage" ColumnName="ShowOnHomePage" />
                 <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
                 <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />
+<<<<<<< HEAD
                 <ScalarProperty Name="UpdateOnUtc" ColumnName="UpdateOnUtc" />
                 <ScalarProperty Name="DeteleId" ColumnName="DeteleId" />
+=======
+                <ScalarProperty Name="UpdatedOnUtc" ColumnName="UpdatedOnUtc" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -210,6 +301,7 @@
               <MappingFragment StoreEntitySet="Categories">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+<<<<<<< HEAD
                 <ScalarProperty Name="Avatar" ColumnName="Avatar" />
                 <ScalarProperty Name="Slug" ColumnName="Slug" />
                 <ScalarProperty Name="ShowOnHomePage" ColumnName="ShowOnHomePage" />
@@ -227,6 +319,15 @@
                 <ScalarProperty Name="OrderId" ColumnName="OrderId" />
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+=======
+                <ScalarProperty Name="Avartar" ColumnName="Avartar" />
+                <ScalarProperty Name="Slug" ColumnName="Slug" />
+                <ScalarProperty Name="ShowOnHomePage" ColumnName="ShowOnHomePage" />
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />
+                <ScalarProperty Name="UpdatedOnUtc" ColumnName="UpdatedOnUtc" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -235,7 +336,12 @@
               <MappingFragment StoreEntitySet="Orders">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+<<<<<<< HEAD
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
+=======
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />
               </MappingFragment>
@@ -246,16 +352,27 @@
               <MappingFragment StoreEntitySet="Products">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+<<<<<<< HEAD
                 <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+=======
+                <ScalarProperty Name="Avartar" ColumnName="Avartar" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
                 <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
                 <ScalarProperty Name="ShortDes" ColumnName="ShortDes" />
                 <ScalarProperty Name="FullDescription" ColumnName="FullDescription" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="PriceDiscount" ColumnName="PriceDiscount" />
+<<<<<<< HEAD
                 <ScalarProperty Name="TypeId" ColumnName="TypeId" />
                 <ScalarProperty Name="Slug" ColumnName="Slug" />
                 <ScalarProperty Name="BrandId" ColumnName="BrandId" />
                 <ScalarProperty Name="DeleteId" ColumnName="DeleteId" />
+=======
+                <ScalarProperty Name="Typeld" ColumnName="Typeld" />
+                <ScalarProperty Name="Sulg" ColumnName="Sulg" />
+                <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
                 <ScalarProperty Name="ShowOnHomePage" ColumnName="ShowOnHomePage" />
                 <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
                 <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />

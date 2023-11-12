@@ -14,6 +14,11 @@ namespace websitebanhang.Context
     
     public partial class User
     {
+<<<<<<< HEAD
+=======
+        internal object idUser;
+
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

@@ -21,7 +21,12 @@ namespace websitebanhang.Context
         public Nullable<bool> ShowOnHomePage { get; set; }
         public Nullable<int> DisplayOrder { get; set; }
         public Nullable<System.DateTime> CreatedOnUtc { get; set; }
+<<<<<<< HEAD
         public Nullable<System.DateTime> UpdateOnUtc { get; set; }
         public Nullable<bool> DeteleId { get; set; }
+=======
+        public Nullable<System.DateTime> UpdatedOnUtc { get; set; }
+        public Nullable<bool> Deleted { get; set; }
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
     }
 }

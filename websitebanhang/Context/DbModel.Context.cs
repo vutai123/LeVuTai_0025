@@ -27,7 +27,10 @@ namespace websitebanhang.Context
     
         public virtual DbSet<Brand> Brands { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
+<<<<<<< HEAD
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
+=======
+>>>>>>> 16270bbe4a96228c793af4ab11fb6972cea915fd
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<User> Users { get; set; }
